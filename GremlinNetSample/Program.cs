@@ -13,7 +13,6 @@ namespace GremlinNetSample
     /// </summary>
     class Program
     {
-        // Sample Commit
         // Azure Cosmos DB Configuration variables
         // Replace the values in these variables to your own.
         private static string hostname = "your-endpoint.gremlin.cosmosdb.azure.com";
