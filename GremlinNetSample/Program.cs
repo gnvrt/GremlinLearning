@@ -13,7 +13,7 @@ namespace GremlinNetSample
     /// </summary>
     class Program
     {
-        // New Comment Added 
+        // New Comment Added Updated from Local
         // New Comment Added from Repo
         // Azure Cosmos DB Configuration variables
         // Replace the values in these variables to your own.
