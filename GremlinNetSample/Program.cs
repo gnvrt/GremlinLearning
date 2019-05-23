@@ -17,11 +17,11 @@ namespace GremlinNetSample
         // New Comment Added from Repo
         // Azure Cosmos DB Configuration variables
         // Replace the values in these variables to your own.
-        private static string hostname = "your-endpoint.gremlin.cosmosdb.azure.com";
+        private static string hostname = "mscosmosdbgrpah.gremlin.cosmos.azure.com";//"your-endpoint.gremlin.cosmosdb.azure.com";
         private static int port = 443;
-        private static string authKey = "your-authentication-key";
-        private static string database = "your-database";
-        private static string collection = "your-collection-or-graph";
+        private static string authKey = "4hebgsUSGKwEVNT4emWKchVx7prNSF1AxKfqlA1sl5UvrqME4uJG1AOF3giVBfgQu9XXg85u0lsZ3YnL8M8NFg==";//"your-authentication-key";
+        private static string database = "sample-database";//"your-database";
+        private static string collection = "sample-graph";//"your-collection-or-graph";
 
         // Gremlin queries that will be executed.
         private static Dictionary<string, string> gremlinQueries = new Dictionary<string, string>
@@ -44,7 +44,7 @@ namespace GremlinNetSample
             { "Loop",           "g.V('thomas').repeat(out()).until(has('id', 'robin')).path()" },
             { "DropEdge",       "g.V('thomas').outE('knows').where(inV().has('id', 'mary')).drop()" },
             { "CountEdges",     "g.E().count()" },
-            { "DropVertex",     "g.V('thomas').drop()" },
+            //{ "DropVertex",     "g.V('thomas').drop()" },
         };
 
         // Starts a console application that executes every Gremlin query in the gremlinQueries dictionary. 
